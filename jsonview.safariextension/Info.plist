@@ -7,7 +7,7 @@
 	<key>Builder Version</key>
 	<string>10600.1.25</string>
 	<key>CFBundleDisplayName</key>
-	<string>jsonview</string>
+	<string>JsonView</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.acrogenesis.jsonview</string>
 	<key>CFBundleInfoDictionaryVersion</key>
