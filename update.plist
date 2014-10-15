@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>Extension Updates</key>
+   <array>
+     <dict>
+       <key>CFBundleIdentifier</key>
+       <string>com.acrogenesis.jsonview</string>
+       <key>Developer Identifier</key>
+       <string>56Q494QF3L</string>
+       <key>CFBundleVersion</key>
+       <string>1</string>
+       <key>CFBundleShortVersionString</key>
+       <string>1.0</string>
+       <key>URL</key>
+       <string>https://github.com/acrogenesis/jsonview-safari/raw/v1.0/jsonview.safariextz</string>
+     </dict>
+   </array>
+</dict>
+</plist>
