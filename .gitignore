@@ -1,4 +1,3 @@
 *.certSigningRequest
 *.cer
-*.safariextz
 .DS_Store
