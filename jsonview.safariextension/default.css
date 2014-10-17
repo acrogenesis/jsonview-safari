@@ -1,5 +1,7 @@
 body {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .prop {
@@ -20,41 +22,94 @@ body {
 
 .string {
   color: green;
+  white-space: pre-wrap;
 }
 
 .collapser {
   position: absolute;
   left: -1em;
+  top: -.2em;
   cursor: pointer;
+  user-select: none;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: -webkit-transform .2s;
+  transition: transform .2s;
+}
+
+.collapser:before {
+  content: "▸";
+}
+
+.collapsible {
+  -webkit-transition: height 1.2s;
+  transition: height 1.2s;
+  -webkit-transition: width 1.2s;
+  transition: width 1.2s;
+}
+
+.collapsible.collapsed {
+  height: .8em;
+  width: 1em;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+.collapsible.collapsed:before {
+  content: "…";
+  width: 1em;
+  margin-left: .2em;
+}
+
+.collapser.collapsed {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.q {
+  display: inline-block;
+  width: 0px;
+  color: transparent;
+}
+
+.quoted .q {
+  display: inline;
+  width: auto;
+  color: inherit;
+  font-weight: normal;
 }
 
 li {
   position: relative;
 }
 
-li:after {
-  content: ',';
-}
-
-li:last-child:after {
-  content: '';
-}
-
 #error {
-  -moz-border-radius: 8px;
-  border: 1px solid #970000;
-  background-color: #F7E8E8;
-  margin: .5em;
-  padding: .5em;
+  border-bottom: 1px solid rgb(212, 209, 209);
+  background-color: rgb(239, 239, 239);
+  margin-bottom: 1.5em;
+  padding: 1em .5em;
 }
 
 .errormessage {
-  font-family: monospace;  
+  font-family: monospace;
+  margin-top: .5em;
+  color: rgb(167, 5, 5);
+}
+
+.errorcolumn {
+  background-color: rgb(167, 5, 5);
+  color: white;
+}
+
+.errorline {
+  background-color: rgb(255, 226, 226);
 }
 
 #json {
   font-family: monospace;
   font-size: 1.1em;
+  white-space: pre-wrap;
+  margin: .5em;
 }
 
 ul {
