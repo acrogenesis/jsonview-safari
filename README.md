@@ -19,5 +19,5 @@ Contributing
 6. Enjoy a refreshing `Insert Favorite Beverage` and wait
 
 [1]: https://github.com/acrogenesis/jsonview-safari/pulls
-[download-link]: https://github.com/acrogenesis/jsonview-safari/raw/v1.0/jsonview.safariextz
+[download-link]: https://github.com/acrogenesis/jsonview-safari/raw/v1.1/jsonview.safariextz
 [download-icon]: https://github.com/acrogenesis/jsonview-safari/blob/master/icon-install_2x.png
