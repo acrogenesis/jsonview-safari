@@ -5,7 +5,7 @@ Formats & syntax highlights JSON viewed inside of the web browser!
 
 [Install Now ![download-icon]][download-link]
 
-This plugin was ported from [jsonview-chrome](https://github.com/jamiew/jsonview-chrome)
+This plugin was ported from [jsonview](https://github.com/bhollis/jsonview) and [jsonview-chrome](https://github.com/jamiew/jsonview-chrome)
 
 
 Contributing
