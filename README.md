@@ -7,6 +7,7 @@ Formats & syntax highlights JSON viewed inside of the web browser!
 
 This plugin was ported from [jsonview](https://github.com/bhollis/jsonview) and [jsonview-chrome](https://github.com/jamiew/jsonview-chrome)
 
+![example]
 
 Contributing
 ---
@@ -21,3 +22,4 @@ Contributing
 [1]: https://github.com/acrogenesis/jsonview-safari/pulls
 [download-link]: https://github.com/acrogenesis/jsonview-safari/raw/v1.1/jsonview.safariextz
 [download-icon]: https://github.com/acrogenesis/jsonview-safari/blob/master/icon-install_2x.png
+[example]: https://github.com/acrogenesis/jsonview-safari/blob/master/example.png
