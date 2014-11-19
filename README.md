@@ -1,5 +1,6 @@
 jsonview-safari
 ===============
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/acrogenesis/jsonview-safari?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Formats & syntax highlights JSON viewed inside of the web browser!
 
