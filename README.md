@@ -5,6 +5,8 @@ Formats & syntax highlights JSON viewed inside of the web browser!
 
 [Install Now ![download-icon]][download-link]
 
+[View on Apple Safari Extensions Gallery](https://extensions.apple.com/details/?id=com.acrogenesis.jsonview-56Q494QF3L)
+
 This plugin was ported from [jsonview](https://github.com/bhollis/jsonview) and [jsonview-chrome](https://github.com/jamiew/jsonview-chrome)
 
 ![example]
