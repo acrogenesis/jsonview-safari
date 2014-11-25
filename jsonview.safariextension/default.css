@@ -68,7 +68,7 @@ body {
 
 .q {
   display: inline-block;
-  width: 0px;
+  width: 0;
   color: transparent;
 }
 
