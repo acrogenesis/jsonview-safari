@@ -191,7 +191,7 @@ if(is_json || is_jsonp){
     // Wrap the HTML fragment in a full document. Used by jsonToHTML and errorPage.
     toHTML: function(content, title) {
       return '<!DOCTYPE html>\n' +
-        '<html><head><title>' + this.htmlEncode(title) + '</title>' +
+        '<html><head><meta charset="UTF-8"><title>' + this.htmlEncode(title) + '</title>' +
         '<link rel="stylesheet" type="text/css" href="' + safari.extension.baseURI + "default.css" + '">' +
         '</head><body>' +
         content +
@@ -243,7 +243,8 @@ if(is_json || is_jsonp){
     // console.log(e);
     outputDoc = this.jsonFormatter.errorPage(e, this.data, this.uri);
   }
-  document.body.innerHTML = outputDoc;
+  // document.body.innerHTML = outputDoc;
+  document.documentElement.innerHTML = outputDoc;
 
   //////////////////////////////////
   ////////BEGINS DEFAULT.JS/////////
@@ -307,6 +308,33 @@ if(is_json || is_jsonp){
   //////////////////////////////////
   /////////ENDS DEFAULT.JS//////////
   //////////////////////////////////
+
+  /**
+  * Converts the markup to DOM nodes
+  *
+  * @private
+  * @param {string|Markup} value The node
+  * @return {Node}
+  */
+  function toDOM(value) {
+    var wrapper = createElement('div');
+    wrapper.innerHTML = ''+value;
+
+    // trim extraneous whitespace
+    trimWhitespace(wrapper);
+
+    // eliminate wrapper for single nodes
+    if (wrapper.childNodes.length === 1) {
+      return wrapper.firstChild;
+    }
+
+    // create a document fragment to hold elements
+    var frag = createElement('');
+    while (wrapper.firstChild) {
+      frag.appendChild(wrapper.firstChild);
+    }
+    return frag;
+  }
 
 }else {
   // console.log("JSONView: this is not json, not formatting.");
