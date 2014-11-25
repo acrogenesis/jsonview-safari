@@ -31,6 +31,10 @@ body {
   top: -.2em;
   cursor: pointer;
   user-select: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   -webkit-transition: -webkit-transform .2s;
@@ -42,6 +46,10 @@ body {
 }
 
 .collapsible {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
   -webkit-transition: height 1.2s;
   transition: height 1.2s;
   -webkit-transition: width 1.2s;
@@ -62,6 +70,10 @@ body {
 }
 
 .collapser.collapsed {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
