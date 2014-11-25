@@ -1,9 +1,9 @@
 this.data = document.body.innerHTML;
 this.uri = document.location.href;
 
-if(/^\<pre.*\>(.*)\n?\<\/pre\>$/.test(this.data)){
+if(document.getElementsByTagName("pre")[0]){
   // console.log("JSONView: data is wrapped in <pre>...</pre>, stripping HTML...");
-  this.data = this.data.replace(/<(?:.|\s)*?>/g, ''); //Aggressively strip HTML.
+  this.data = document.getElementsByTagName("pre")[0].innerHTML;
 }
 
 var json_regex = /^\s*([\[\{].*[\}\]])\s*$/; // Ghetto, but it works
