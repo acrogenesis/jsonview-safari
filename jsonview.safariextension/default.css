@@ -38,7 +38,7 @@ body {
 }
 
 .collapser:before {
-  content: "▸";
+  content: "\25B8";
 }
 
 .collapsible {
