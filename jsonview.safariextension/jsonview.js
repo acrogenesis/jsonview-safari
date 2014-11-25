@@ -22,19 +22,12 @@ if(is_json || is_jsonp){
 
   JSONFormatter.prototype = {
     /**
-     * Encode a string to be used in HTML
-     */
-    htmlEncode: function(t) {
-      return t !== null ? t.toString().replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;") : '';
-    },
-
-    /**
      * Completely escape a json string
      */
     jsString: function(s) {
       // Slice off the surrounding quotes
       s = JSON.stringify(s).slice(1, -1);
-      return this.htmlEncode(s);
+      return s;
     },
 
     /**
@@ -48,7 +41,7 @@ if(is_json || is_jsonp){
      * Surround value with a span, including the given className
      */
     decorateWithSpan: function(value, className) {
-      return '<span class="' + className + '">' + this.htmlEncode(value) + '</span>';
+      return '<span class="' + className + '">' + value + '</span>';
     },
 
     // Convert a basic JSON datatype (number, string, boolean, null, object, array) into an HTML fragment.
@@ -69,7 +62,7 @@ if(is_json || is_jsonp){
       }
       else if (valueType == 'string') {
         if (/^(http|https|file):\/\/[^\s]+$/i.test(value)) {
-          return '<a href="' + this.htmlEncode(value) + '"><span class="q">&quot;</span>' + this.jsString(value) + '<span class="q">&quot;</span></a>';
+          return '<a href="' + value + '"><span class="q">&quot;</span>' + this.jsString(value) + '<span class="q">&quot;</span></a>';
         } else {
           return '<span class="string">&quot;' + this.jsString(value) + '&quot;</span>';
         }
@@ -116,7 +109,7 @@ if(is_json || is_jsonp){
         } else {
           escapedProp = '"' + escapedProp + '"';
         }
-        output += '<li><span class="prop' + (bare ? '' : ' quoted') + '" title="' + this.htmlEncode(subPath) +
+        output += '<li><span class="prop' + (bare ? '' : ' quoted') + '" title="' + subPath +
           '"><span class="q">&quot;</span>' + this.jsString(prop) +
           '<span class="q">&quot;</span></span>: ' + this.valueToHTML(json[prop], subPath);
         if (numProps > 1) {
@@ -144,7 +137,7 @@ if(is_json || is_jsonp){
       var parts = /line (\d+) column (\d+)/.exec(message);
 
       return {
-        message: this.htmlEncode(message),
+        message: message,
         line: +parts[1],
         column: +parts[2]
       };
@@ -152,7 +145,7 @@ if(is_json || is_jsonp){
 
     highlightError: function(data, lineNum, columnNum) {
       if (!lineNum || !columnNum) {
-        return this.htmlEncode(data);
+        return data;
       }
 
       var lines = data.match(/^.*((\r\n|\n|\r)|$)/gm);
@@ -163,10 +156,10 @@ if(is_json || is_jsonp){
 
         if (i == lineNum - 1) {
           output += '<span class="errorline">';
-          output += this.htmlEncode(line.substring(0, columnNum - 1)) + '<span class="errorcolumn">' + this.htmlEncode(line[columnNum - 1]) + '</span>' + this.htmlEncode(line.substring(columnNum));
+          output += line.substring(0, columnNum - 1) + '<span class="errorcolumn">' + line[columnNum - 1] + '</span>' + line.substring(columnNum);
           output += '</span>';
         } else {
-          output += this.htmlEncode(line);
+          output += line;
         }
       }
 
@@ -191,7 +184,7 @@ if(is_json || is_jsonp){
     // Wrap the HTML fragment in a full document. Used by jsonToHTML and errorPage.
     toHTML: function(content, title) {
       return '<!DOCTYPE html>\n' +
-        '<html><head><meta charset="UTF-8"><title>' + this.htmlEncode(title) + '</title>' +
+        '<html><head><meta charset="UTF-8"><title>' + title + '</title>' +
         '<link rel="stylesheet" type="text/css" href="' + safari.extension.baseURI + "default.css" + '">' +
         '</head><body>' +
         content +
