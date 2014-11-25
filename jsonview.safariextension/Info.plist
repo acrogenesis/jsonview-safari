@@ -2,58 +2,58 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Author</key>
-	<string>Adrian Rangel</string>
-	<key>Builder Version</key>
-	<string>10600.1.25</string>
-	<key>CFBundleDisplayName</key>
-	<string>JsonView</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.acrogenesis.jsonview</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
-	<key>CFBundleVersion</key>
-	<string>1.1</string>
-	<key>Chrome</key>
-	<dict>
-		<key>Global Page</key>
-		<string>global.html</string>
-	</dict>
-	<key>Content</key>
-	<dict>
-		<key>Scripts</key>
-		<dict>
-			<key>End</key>
-			<array>
-				<string>jsonview.js</string>
-			</array>
-		</dict>
-		<key>Stylesheets</key>
-		<array>
-			<string>jsonview.css</string>
-		</array>
-	</dict>
-	<key>Description</key>
-	<string>An extension that helps you view JSON documents in the browser. </string>
-	<key>DeveloperIdentifier</key>
-	<string>56Q494QF3L</string>
-	<key>ExtensionInfoDictionaryVersion</key>
-	<string>1.0</string>
-	<key>Permissions</key>
-	<dict>
-		<key>Website Access</key>
-		<dict>
-			<key>Include Secure Pages</key>
-			<true/>
-			<key>Level</key>
-			<string>All</string>
-		</dict>
-	</dict>
-	<key>Update Manifest URL</key>
-	<string>https://raw.githubusercontent.com/acrogenesis/jsonview-safari/master/update.plist</string>
-	<key>Website</key>
-	<string>https://github.com/acrogenesis/jsonview-safari</string>
+  <key>Author</key>
+  <string>Adrian Rangel</string>
+  <key>Builder Version</key>
+  <string>10600.1.25</string>
+  <key>CFBundleDisplayName</key>
+  <string>JsonView</string>
+  <key>CFBundleIdentifier</key>
+  <string>com.acrogenesis.jsonview</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundleShortVersionString</key>
+  <string>1.1</string>
+  <key>CFBundleVersion</key>
+  <string>1.1</string>
+  <key>Chrome</key>
+  <dict>
+    <key>Global Page</key>
+    <string>global.html</string>
+  </dict>
+  <key>Content</key>
+  <dict>
+    <key>Scripts</key>
+    <dict>
+      <key>End</key>
+      <array>
+        <string>jsonview.js</string>
+      </array>
+    </dict>
+    <key>Stylesheets</key>
+    <array>
+      <string>jsonview.css</string>
+    </array>
+  </dict>
+  <key>Description</key>
+  <string>An extension that helps you view JSON documents in the browser. </string>
+  <key>DeveloperIdentifier</key>
+  <string>56Q494QF3L</string>
+  <key>ExtensionInfoDictionaryVersion</key>
+  <string>1.0</string>
+  <key>Permissions</key>
+  <dict>
+    <key>Website Access</key>
+    <dict>
+      <key>Include Secure Pages</key>
+      <true/>
+      <key>Level</key>
+      <string>All</string>
+    </dict>
+  </dict>
+  <key>Update Manifest URL</key>
+  <string>https://raw.githubusercontent.com/acrogenesis/jsonview-safari/master/update.plist</string>
+  <key>Website</key>
+  <string>https://github.com/acrogenesis/jsonview-safari</string>
 </dict>
 </plist>
