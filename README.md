@@ -9,7 +9,7 @@ Formats & syntax highlights JSON viewed inside of the web browser!
 
 This plugin was ported from [jsonview](https://github.com/bhollis/jsonview) and [jsonview-chrome](https://github.com/jamiew/jsonview-chrome)
 
-If you like JSONView check out [JSONAce](https://github.com/acrogenesis/JSONAce) it's like JSONView but uses the ACE editor.
+__If you like JSONView check out [JSONAce](https://github.com/acrogenesis/JSONAce) it's like JSONView but uses the ACE editor.__
 
 ![example]
 
