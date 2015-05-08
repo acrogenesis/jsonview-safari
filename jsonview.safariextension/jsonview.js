@@ -216,7 +216,7 @@ if(is_json){
   var cleanData = '',
       callback = '';
 
-  var callback_results = jsonp_regex.exec(this.data);
+  var callback_results = IsJsonString(this.data);
   if( callback_results && callback_results.length == 3 ){
     // console.log("THIS IS JSONp");
     callback = callback_results[1];
