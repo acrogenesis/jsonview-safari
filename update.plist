@@ -10,11 +10,11 @@
        <key>Developer Identifier</key>
        <string>56Q494QF3L</string>
        <key>CFBundleVersion</key>
-       <string>1.5</string>
+       <string>1.6</string>
        <key>CFBundleShortVersionString</key>
-       <string>1.5</string>
+       <string>1.6</string>
        <key>URL</key>
-       <string>https://github.com/acrogenesis/jsonview-safari/raw/v1.5/jsonview.safariextz</string>
+       <string>https://github.com/acrogenesis/jsonview-safari/raw/v1.6/jsonview.safariextz</string>
      </dict>
    </array>
 </dict>
