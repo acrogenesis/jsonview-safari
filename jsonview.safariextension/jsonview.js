@@ -1,7 +1,7 @@
 this.data = document.body.innerHTML;
 this.uri = document.location.href;
 
-if(document.getElementsByTagName("pre")[0] && document.getElementsByTagName("pre").length == 1){
+if(document.getElementsByTagName("pre")[0] && document.body.getElementsByTagName('*').length == 1 && document.getElementsByTagName("pre").length == 1){
   // console.log("JSONView: data is wrapped in <pre>...</pre>, stripping HTML...");
   this.data = document.getElementsByTagName("pre")[0].innerHTML;
 }
