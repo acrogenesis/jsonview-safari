@@ -1,14 +1,8 @@
-# URGENT MESSAGE
-![](http://www.motherjones.com/files/images/blog_apple_evil_empire.jpg)
-
-Apple changed their Safari Extensions policy and now I need a Developer Account which costs $100 USD to release new bug fixes and features.
-Please send me some cash to gather the $100. Thanks! https://www.changetip.com/tipme/acrogenesis
-
-
+# No longer available 
+The safari extensions framework change a lot. This code is outdated
 
 jsonview-safari
 ===============
-[![Gratipay](https://img.shields.io/gratipay/acrogenesis.svg)](https://gratipay.com/~acrogenesis)
 
 Formats & syntax highlights JSON viewed inside of the web browser!
 
