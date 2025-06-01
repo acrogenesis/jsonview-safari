@@ -1,3 +1,8 @@
+# Advanced JSON Viewer
+
+Better improved version:
+https://apps.apple.com/app/advanced-json-viewer/id6739271287
+
 # No longer available 
 The safari extensions framework change a lot. This code is outdated
 
